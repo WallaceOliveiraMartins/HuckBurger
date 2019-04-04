@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Huck Burger</title>
+</head>
+<body>
+    <h1>Huck Burger</h1>
+    <h3>Dados do Cliente</h3> 
+    <form action="pedido.php" method="POST" style="width: 600px;">
+        <label>Nome:</label><br>
+        <input type="text" name="nome"><br>
+        <label>Telefone</label><br>
+        <input type="text" name="telefone">
+        <br>
+        <label>Monte Seu lanche</label><br>
+        <label>Ponto da Carne</label><br>
+        <input type="radio" value="mal passada" name="pontodacarne"><label>Mal Passada</label>
+        <input type="radio" value="ao ponto" name="pontodacarne"><label>Ao ponto</label><br>
+        <label>Pão:</label><br>
+        <select name="pao">
+            <option value="Brioche">Brioche</option>
+            <option value="Australiano">Australiano</option>
+            <option value="Integral">Integral</option>
+            <option value="Alho e oregano">Alho e orégano</option>
+            <option value="Italiano com ervas">Italiano com ervas</option>
+        </select><br>
+        <label>Queijo:</label><br>
+    <select name="queijo">
+            <option value="Cheddar">Cheddar</option>
+            <option value="Prato">Prato</option>
+            <option value="Suiço">Suiço</option>
+            <option value="Muçarela">Muçarela</option>
+            <option value="Sem Queijo">Sem Queijo</option>
+
+    </select>
+    <br>
+        <label>Observações</label><br>
+        <textarea name="obs" rows="4" cols="50">
+        </textarea><br>
+        <input type="submit" value="Cadastrar" class="btn btn-success">
+    </form>
+
+    
+</body>
+</html>

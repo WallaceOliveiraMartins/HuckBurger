@@ -1,0 +1,10 @@
+Create Database huckburguer;
+Create Table pedidos(
+id int primary key AUTO_INCREMENT,
+    nome varchar(200),
+    telefone varchar(11),
+    pontodecarne varchar(40),
+    pao varchar(40),
+    queijo varchar(40),
+    obs varchar(255)
+);
